@@ -31,8 +31,6 @@ class People(db.Model):
        self.email = email
        self.phone = phone
 
-db.create_all()
-db.session.commit()
 
 @app.route('/')
 def index():
